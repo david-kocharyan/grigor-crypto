@@ -2,12 +2,12 @@ $(function() {
 "use strict";
 
 function scrollfix () {
-	var scroll = $(window).scrollTop();    
+	var scroll = $(window).scrollTop();
 	if (scroll >500) {
   		$(".home2 #header").addClass('fix');
 	}
 	else
-	{	
+	{
 		$(".home2 #header").removeClass('fix');
 	}
 }
@@ -23,9 +23,9 @@ function re_size () {
 		$('.nav li').on('click', function () {
 		$('.#menu ul').css({"display":"none"});
 		});
-		
+
 		/* ------------bannre button margin ------------- */
-		$('.cd-intro').children('button').removeClass('mt_30').addClass('mt_20');           
+		$('.cd-intro').children('button').removeClass('mt_30').addClass('mt_20');
 	}
 	if ($(window).width() > 991) {
 		/* ------------bannre button margin ------------- */
@@ -33,80 +33,29 @@ function re_size () {
 	}
 }
 
-function owl_carousel () {
-/* ------------ OWL Slider Start  ------------- */
-	/* ----- client slider Start  ------ */
-	$('.client').owlCarousel({
-		loop:true,
-		autoplay:true,
-		responsiveClass:true,
-		items : 1, //10 items above 1000px browser width
-		responsive:{
-			0:{
-				items:1,
-				nav:false
-			},
-			600:{
-				items:1,
-				nav:true
-			},
-			1000:{
-				items:1,
-				nav:true,
-				loop:true
-			}
-		}
-	})
-	/* ----- client slider End  ------ */
-	
-	/* ----- blog post Start  ------ */
-	$('#blog-post').owlCarousel({
-		loop:false,
-		autoplay:false,
-		responsiveClass:true,
-		items : 3, //10 items above 1000px browser width
-		responsive:{
-			0:{
-				items:1,
-				nav:false
-			},
-			600:{
-				items:2,
-				nav:false
-			},
-			1000:{
-				items:3,
-				nav:true,
-				loop:true
-			}
-		}
-	})
-	/* ----- blog post End  ------ */
-	
-	/* ----- team Start  ------ */
-	$('.team3col').owlCarousel({
-		autoplay:false,
-		responsiveClass:true,
-		items : 3, //10 items above 1000px browser width
-		responsive:{
-			0:{
-				items:1,
-				nav:false
-			},
-			600:{
-				items:2,
-				nav:true
-			},
-			1000:{
-				items:3,
-				nav:true,
-			}
-		}
-	
-	})
-
-	/* ----- team End  ------ */
-/* ------------ OWL Slider End  ------------- */
+function swiper () {
+    $(".slider-main").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        pauseOnHover: true,
+        dots: false,
+        cssEase: 'linear',
+        fade: true,
+        draggable: true,
+        prevArrow: '<button class="PrevArrow fa fa-angle-left"></button>',
+        nextArrow: '<button class="NextArrow fa fa-angle-right"></button>',
+        responsive: [{
+            breakpoint: 340,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: false,
+            }
+        },
+        ]
+    });
 }
 
 function parallax (){
@@ -128,7 +77,7 @@ function parallax (){
 		$('[data-toggle="tooltip"]').tooltip();
 		$(".loder").fadeOut("slow");
 		scrollfix ();
-		owl_carousel ();
+        swiper ();
 		bannerheight ();
 		re_size();
 		parallax ();

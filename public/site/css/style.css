@@ -7,14 +7,14 @@
 ===== BASIC STYLE =====
   + General
   + Color Swicher
-  + Parallax 
-  + Typography   
-  + Spacing    
+  + Parallax
+  + Typography
+  + Spacing
   + Button
   + Services
-         
-      
-===== HEADER ===== 
+
+
+===== HEADER =====
   + Header
   + Navbar
 
@@ -26,7 +26,7 @@
   + About Us Page
   + Team
   + Contact Us
-  
+
 
 ===== FOOTER =====
 
@@ -52,7 +52,7 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../images/loder.gif) center no-repeat #fff;
+	background: url(../img/loder.gif) center no-repeat #fff;
 }
 
 ::-moz-selection {
@@ -816,19 +816,18 @@ i.right {
 	left: 0;
 }
 /* =====  Services  =====*/
-#service{
-	background: url('../images/bg02.jpg');
-}
 .service {
     padding: 40px 20px;
     border: 3px solid #f5f5f5;
     background: #fff;
+    background-size: cover;
+    color: #fff;
 }
 .service:hover {
-    border: 3px solid #fab915;
+    border: 3px solid #1571fa;
 }
 .service:hover h4 {
-    color: #fab915;
+    color: #1571fa;
 }
 .icon-top img {
     max-width: 20%;
@@ -1036,6 +1035,9 @@ header {
 
 
 /* =====  CONTANT CSS START =====*/
+
+
+
 
 /* =====  BANNER CSS  ===== */
 .home2 .banner{
@@ -1290,6 +1292,9 @@ header {
 }
 /* ===== End Banner CSS ===== */
 
+
+
+
 /* ===== Portfolio css ===== */
 .main_title {
 	display: inline-block;
@@ -1398,6 +1403,12 @@ header {
 }
 /* =====  End Portfolio css  ===== */
 
+
+
+
+
+
+
 /* =====  price css  ===== */
 thead {
     background: #333333 none repeat scroll 0 0;
@@ -1406,226 +1417,133 @@ thead {
 
 /* =====  End price css  ===== */
 
-
-/* =====  Blog css  ===== */
-
-.post-type {
-	background: rgba(0, 0, 0, 0.80) none repeat scroll 0 0;
-	color: #fab915;
-	cursor: default;
-	font-size: 20px;
-	height: 40px;
-	left: 25px;
-	line-height: 40px;
-	position: absolute;
-	text-align: center;
-	top: 10px;
-	width: 40px;
+.sufia-slider .single-slider {
+    height: 600px;
+    background-size: cover;
+    position: relative;
 }
-.post-info {
-	display: inline-block;
+.sufia-slider .single-slider:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, .60);
 }
-.blog .date i {
-	margin-right: 10px;
+.sufia-slider .welcome-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background: transparent;
 }
-.blog-item:hover .post-info h3 a {
-    color: #fab915;
+.sufia-slider .welcome-text.center{
+    text-align:center;
 }
-#blog-post .owl-nav {
-	position: absolute;
-	top: 0;
-	width: 100%;
+.sufia-slider .welcome-text.right{
+    text-align:right;
 }
-#blog-post .owl-nav > div {
-	height: 400px;
-	width: 200px;
-	font-size: 0px;
-	position: absolute;
+.sufia-slider .welcome-text h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
-#blog-post .owl-nav .owl-next {
-	cursor: url(../images/right_arrow.png), auto !important;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+.sufia-slider .welcome-text h1 span {
+    display: block;
+    margin-bottom: 20px;
 }
-#blog-post .owl-nav .owl-prev {
-	cursor: url(../images/left_arrow.png), auto !important;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+.sufia-slider .welcome-text .button {
+    margin-top: 40px;
 }
-#blog-post .owl-nav .owl-prev {
-	left: 0px;
+.sufia-slider .welcome-text .button .btn {
+    text-transform: capitalize;
+    width: 160px;
+    margin-right: 30px;
+    border-radius: 3px;
+    color: #333;
+    background:#fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    position:relative;
 }
-#blog-post .owl-nav .owl-next {
-	right:0px;
+.sufia-slider .welcome-text .button .btn:hover{
+    color:#fff;
+    background:#29B6F6;
 }
-/* =====  End Blog css  ===== */
-
-/* =====  Client css  ===== */
-#client .type-01 {
-	margin: 0 20px;
+.sufia-slider .welcome-text .button .btn.primary{
+    background:#29B6F6;
+    color:#fff;
 }
-.client .owl-nav {
-	position: absolute;
-	top: 0;
-	width: 100%;
+.sufia-slider .welcome-text .button .btn.primary:hover{
+    background:#fff;
+    color:#333;
 }
-.client .owl-nav > div {
-	height: 300px;
-	width: 300px;
-	font-size: 0px;
-	position: absolute;
+.sufia-slider .welcome-text .button .btn:last-child{
+    margin:0px;
 }
-.client .owl-nav .owl-next {
-	cursor: url(../images/right_arrow_white.png), auto !important;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+.sufia-slider .welcome-text .b-arrow{
+    background:url(img/arrow.png);
+    width:100%;
+    height:18px;
+    background-repeat:no-repeat;
+    margin-top:40px;
 }
-.client .owl-nav .owl-prev {
-	cursor: url(../images/left_arrow_white.png), auto !important;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+.sufia-slider .welcome-text.center .b-arrow{
+    background-position:center;
 }
-.client .owl-nav .owl-prev {
-	left: -200px;
+.sufia-slider .welcome-text.right .b-arrow{
+    background-position:right;
 }
-.client .owl-nav .owl-next {
-	right: -200px;
+.sufia-slider button {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    margin-top:-40px;
+    z-index:5;
+    color:#fff;
+    background: none;
+    border: none;
+    transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease;
 }
-.client .type-01 h2 {
-	margin-left: 30px;
-	margin-right: 30px;
+.sufia-slider button:hover{
+    color:#fff;
 }
-.client .fa.fa-quote-left {
-	color: #fab915;
-	font-size: 50px;
+.sufia-slider button.PrevArrow {
+    left:0;
 }
-.client-designation {
-	display: inline-block;
+.sufia-slider button.NextArrow {
+    right:0;
 }
-.client-title strong {
-	color: #000;
+/* Slider Animation */
+.sufia-slider .single-slider.slick-active h1{
+    animation: fadeInUp	1s both 0.6s;
 }
-.client-detail {
-    color: #F5F5F5;
+.sufia-slider .single-slider.slick-active .btn {
+    animation: fadeInUp 1s both 1s;
 }
-/* =====  End Client css  ===== */
-
-/* =====  Aboutus css  ===== */
-.about{
-	background:url('../images/bg01.jpg');
-	background-position: center center;
-    background-repeat: no-repeat;
-    transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
-    padding: 120px 0px 127px 0px;
+.sufia-slider .single-slider.slick-active .b-arrow{
+    animation: fadeInUp 1s both 1.5s;
 }
-.about-heading {
-	border-bottom: 2px solid #fab915;
-	display: inline-block;
-}
-.about-heading span {
-	font-weight: 300;
-}
-/* =====  End Aboutus css  ===== */
 
 
-/* =====  Team css  ===== */
-#team{
-	background:url('../images/bg03.jpg')
-}
-.team3col .owl-nav{
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-.team3col .owl-nav > div{
-	font-size: 0;
-	height: 360px;
-	position: absolute;
-	width: 200px;
-}
-.team3col .owl-nav .owl-next{
-	cursor: url(../images/right_arrow.png), auto !important;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-.team3col .owl-nav .owl-prev{
-	cursor: url(../images/left_arrow.png), auto !important;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-.team3col .owl-nav .owl-prev{
-	left: 0px;
-}
-.team3col .owl-nav .owl-next{
-	right: 0px;
-}
-.team-detail {
-	padding: 0 15px;
-}
-.team-designation, .team-title {
-	text-transform: uppercase;
-}
-.team .social > li, .team_grid .social > li {
-	background: #dfdfdf none repeat scroll 0 0;
-	border-radius: 50%;
-	display: inline-block;
-	height: 40px;
-	margin: 0 5px;
-	width: 40px;
-}
-.team .social > li:hover a, .team_grid .social > li:hover a {
-	color:#000;
-}
-.social li a i {
-	margin: 12px;
-}
-.team-detail:hover .team-item-img {
-	filter: grayscale(0%);
-}
-.team-detail:hover .team-title{
-  color: #fab915;
-}
-img.currency-icon {
-    padding: 0 10px 0 0;
-}
-/* =====  End Team css  ===== */
 
-
-/* =====  Contact us css  ===== */
-.contact .fa {
-	margin-right: 10px;
-  color: #fab915;
-}
-/* =====  End Contact us css  ===== */
-.map_right #map {
-	height: 530px;
-}
-#map {
-	width: 100%;
-	height: 400px;
-	background-color: grey;
-}
 /* =====  FOOTER CSS START=====*/
-
- 
 .footer {
 	text-align: center;
 }
@@ -1662,11 +1580,11 @@ img.currency-icon {
 	color: #fff;
 }
 /* =====  FOOTER CSS END=====*/
- 
- 
- 
- 
-/* =====  RESPONSIVE CSS START  =====*/ 
+
+
+
+
+/* =====  RESPONSIVE CSS START  =====*/
 
 @media (min-width: 1200px) {
 .container {
@@ -1675,32 +1593,7 @@ img.currency-icon {
 }
 /*-----------------------------------*/
 
- @media (min-width: 992px) and (max-width: 1199px) {
-.about-title {
-	font-size: 40px;
-	line-height: 55px;
-}
-}
-/*----------------------------------*/
 
-@media (max-width:991px) {
-
-.three-col-work .grid-item, .three-col-blog .blog-item{
-	width: 50%;
-}
-.client .owl-nav{
-  display: none;
-}
-.about-inner {
-    background: hsla(0, 0%, 100%, 0.92);
-}
-}
-/*-----------------------------------*/
-	
-@media (min-width: 768px) and (max-width: 991px) {
-}
-/*-----------------------------------*/
-	
 @media (max-width: 767px) {
 .banner_bg{
 	overflow: hidden;

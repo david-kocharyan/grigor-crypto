@@ -23,12 +23,14 @@
     <link rel="stylesheet" type="text/css" href="{{asset('site/css/menu.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('site/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('site/css/animation.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('site/css/owl.carousel.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('site/css/jquery.mb.ytplayer.min.css')}}" media="all">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="{{asset('site/css/slicknav.min.css')}}">
+    <link rel="stylesheet" href="{{asset('site/css/slick.css')}}">
+
+{{--    <link rel="shortcut icon" href="images/favicon.png">--}}
+{{--    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">--}}
+{{--    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">--}}
+{{--    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">--}}
 </head>
 
 <body id="home2" class="home2">
@@ -41,20 +43,13 @@
             <div class="header navbar">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header pull-left"> <a class="navbar-brand" href="index.html"> <img alt="Bitcoin" src="images/logo2.png"> </a> </div>
+                    <div class="navbar-header pull-left"> <a class="navbar-brand" href="/"> <img alt="Bitcoin" src="{{asset('site/img/logo/logo1.png')}}"> </a> </div>
                     <!-- Collection of nav links, forms, and other content for toggling -->
                     <div id="navbarCollapse" class="navbar-collapse navbar-right">
                         <nav id="menu" class='collapse'>
                             <!-- Navigation Menu -->
                             <ul class="nav">
-                                <li class="active"> <a href="#home2">Home</a></li>
-                                <li> <a href="#about">About</a></li>
-                                <li> <a href="#service">Service</a></li>
-                                <li> <a href="#prices">prices</a></li>
-                                <li> <a href="#team">Team</a></li>
-                                <li> <a href="#client">Testimonial</a></li>
-                                <li> <a href="#blogs">Blogs</a></li>
-                                <li> <a href="#contact">Contact</a></li>
+                                <li class="active"><a href="/">Home</a></li>
                             </ul>
                             <!--End Navigation Menu -->
                         </nav>
@@ -105,19 +100,16 @@
 
 <!-- =====  SCRIPT START  ===== -->
 <script src="{{ asset('site/js/jQuery_v3.1.1.min.js') }}"></script>
-<script src="{{ asset('site/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('site/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('site/js/letters-type.js') }}"></script>
 <script src="{{ asset('site/js/menu.js') }}"></script>
 <script src="{{ asset('site/js/custom.js') }}"></script>
-<script src="{{ asset('site/js/particles/particles.js') }}"></script>
-<script src="{{ asset('site/js/particles/app.js') }}"></script>
 <script src="{{ asset('site/js/circle-progress.js') }}"></script>
 <script src="{{ asset('site/js/circle-progress-examples.js') }}"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT3mI0RI16q19Oxv93gSxN0cF0wfxWN6w">
-</script>
 <script src="{{asset('site/js/parallax.js')}}"></script>
 <script src="{{asset('site/js/jquery.easeScroll.js')}}"></script>
+<script type="text/javascript" src="{{asset('site/js/slick.min.js')}}"></script>
+
 <script type="text/javascript">
     $("html").easeScroll();
     // Add scrollspy to <body>
