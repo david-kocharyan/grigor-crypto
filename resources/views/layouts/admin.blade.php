@@ -26,7 +26,7 @@
         <!-- navbar -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="/admin">DG Core</a>
+                <a class="navbar-brand" href="/admin">LOGO</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -83,16 +83,30 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/admin/contact">
-                                    <i class="fas fa-f fa-book"></i>
-                                    Contact
+                                <a class="nav-link" href="/admin/slider-one">
+                                    <i class="fas fa-f fa-images"></i>
+                                    Slider One
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/admin/testimonials">
-                                    <i class="fas fa-f fa-comment"></i>
-                                    Testimonials
+                                <a class="nav-link" href="/admin/slider-two">
+                                    <i class="fas fa-f fa-images"></i>
+                                    Slider Two
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/slider-circle">
+                                    <i class="fas fa-f fa-circle-notch"></i>
+                                    Slider Circle
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/referrals">
+                                    <i class="fas fa-f fa-baseball-ball"></i>
+                                    Referrals
                                 </a>
                             </li>
 

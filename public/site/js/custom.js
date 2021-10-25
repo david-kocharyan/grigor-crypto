@@ -21,7 +21,7 @@ function bannerheight () {
 function re_size () {
 	if ($( window ).width() <= 991) {
 		$('.nav li').on('click', function () {
-		$('.#menu ul').css({"display":"none"});
+		$('#menu ul').css({"display":"none"});
 		});
 
 		/* ------------bannre button margin ------------- */
@@ -36,7 +36,7 @@ function re_size () {
 function swiper () {
     $(".slider-main").slick({
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         slidesToShow: 1,
         pauseOnHover: true,
         dots: false,
@@ -54,6 +54,45 @@ function swiper () {
                 arrows: false,
             }
         },
+        ]
+    });
+
+    $(".slider-circle").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        pauseOnHover: true,
+        dots: false,
+        cssEase: 'linear',
+        fade: false,
+        draggable: true,
+        prevArrow: '<button class="PrevArrow fa fa-angle-left"></button>',
+        nextArrow: '<button class="NextArrow fa fa-angle-right"></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
         ]
     });
 }
@@ -76,7 +115,7 @@ function parallax (){
 	$( window ).ready(function() {
 		$('[data-toggle="tooltip"]').tooltip();
 		$(".loder").fadeOut("slow");
-		scrollfix ();
+		// scrollfix ();
         swiper ();
 		bannerheight ();
 		re_size();
@@ -88,8 +127,8 @@ function parallax (){
 		bannerheight ();
 	});
 
-	$(window).scroll(function() {
-		scrollfix ();
-	});
+	// $(window).scroll(function() {
+	// 	scrollfix ();
+	// });
 
 });

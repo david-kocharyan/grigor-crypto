@@ -34,67 +34,30 @@
 </head>
 
 <body id="home2" class="home2">
-    <!-- =====  LODER  ===== -->
     <div class="loder"></div>
 
     <div class="wrapper">
-        <!-- =====  HEADER START  ===== -->
         <header id="header">
             <div class="header navbar">
                 <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header pull-left"> <a class="navbar-brand" href="/"> <img alt="Bitcoin" src="{{asset('site/img/logo/logo1.png')}}"> </a> </div>
-                    <!-- Collection of nav links, forms, and other content for toggling -->
-                    <div id="navbarCollapse" class="navbar-collapse navbar-right">
-                        <nav id="menu" class='collapse'>
-                            <!-- Navigation Menu -->
-                            <ul class="nav">
-                                <li class="active"><a href="/">Home</a></li>
-                            </ul>
-                            <!--End Navigation Menu -->
-                        </nav>
-                    </div>
+                    <div class="navbar-header pull-right"> <a class="navbar-brand" href="/"> <img alt="Bitcoin" src="{{asset('site/img/logo/logo1.png')}}"> </a> </div>
+                    <div class="navbar-header pull-left"> <p class="navbar-brand">Lorem Ipsum dolor sit a met</p> </div>
                 </div>
             </div>
         </header>
-        <!-- =====  HEADER END  ===== -->
 
         @yield('content')
 
-        <!-- =====  FOOTER START  ===== -->
-        <div class="footer bg-dark ptb_100">
+        <div class="footer bg-dark ptb_20 p">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="footer-link">
-                            <ul>
-                                <li> <a href="#">Home</a></li>
-                                <li> <a href="#">Service</a></li>
-                                <li> <a href="#">Work</a></li>
-                                <li> <a href="#">About</a></li>
-                                <li> <a href="#">Team</a></li>
-                                <li> <a href="#">Blogs</a></li>
-                                <li> <a href="#">Testimonial</a></li>
-                                <li> <a href="#">Contact</a></li>
-                            </ul>
-                        </div>
                         <div class="copyright-part mtb_10">@ 2019 All Rights Reserved Bitcoin</div>
-                        <div class="social_icon">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- =====  FOOTER END  ===== -->
     </div>
-    <!-- =====  WRAPPER END  ===== -->
 </body>
 
 

@@ -1010,14 +1010,11 @@ header {
 }
 
 #header.fix {
-    position: fixed;
+    position: sticky;
     background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
 	transition: 1s;
 }
 
-.fix + .banner2 {
-  padding-top: 127px;
-}
 
 /* ===== Navbar Style ===== */
 
@@ -1540,6 +1537,139 @@ thead {
 .sufia-slider .single-slider.slick-active .b-arrow{
     animation: fadeInUp 1s both 1.5s;
 }
+
+
+/*===============================
+	Slider Style
+===============================*/
+.sufia-slider-circle .single-slider {
+    height: 150px;
+    background-image: url(img/hero-bg.jpg);
+    background-size: cover;
+    position: relative;
+    border-radius: 50%;
+    margin: 10px;
+}
+.sufia-slider-circle .single-slider:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, .60);
+}
+.sufia-slider-circle .welcome-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background: transparent;
+}
+.sufia-slider-circle .welcome-text.center{
+    text-align:center;
+}
+.sufia-slider-circle .welcome-text.right{
+    text-align:right;
+}
+.sufia-slider-circle .welcome-text h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.sufia-slider-circle .welcome-text h1 span {
+    display: block;
+    margin-bottom: 20px;
+}
+.sufia-slider-circle .welcome-text .button {
+    margin-top: 40px;
+}
+.sufia-slider-circle .welcome-text .button .btn {
+    text-transform: capitalize;
+    width: 160px;
+    margin-right: 30px;
+    border-radius: 3px;
+    color: #333;
+    background:#fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    position:relative;
+}
+.sufia-slider-circle .welcome-text .button .btn:hover{
+    color:#fff;
+    background:#29B6F6;
+}
+.sufia-slider-circle .welcome-text .button .btn.primary{
+    background:#29B6F6;
+    color:#fff;
+}
+.sufia-slider-circle .welcome-text .button .btn.primary:hover{
+    background:#fff;
+    color:#333;
+}
+.sufia-slider-circle .welcome-text .button .btn:last-child{
+    margin:0px;
+}
+.sufia-slider-circle .welcome-text .b-arrow{
+    background:url(img/arrow.png);
+    width:100%;
+    height:18px;
+    background-repeat:no-repeat;
+    margin-top:40px;
+}
+.sufia-slider-circle .welcome-text.center .b-arrow{
+    background-position:center;
+}
+.sufia-slider-circle .welcome-text.right .b-arrow{
+    background-position:right;
+}
+.sufia-slider-circle button {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    margin-top:-40px;
+    z-index:5;
+    color:#fff;
+    background:rgba(255, 255, 255, 0.30);
+    transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease;
+}
+.sufia-slider-circle button:hover{
+    color:#fff;
+}
+.sufia-slider-circle button.PrevArrow {
+    left:0;
+}
+.sufia-slider-circle button.NextArrow {
+    right:0;
+}
+/* Slider Animation */
+.sufia-slider-circle .single-slider.slick-active h1{
+    animation: fadeInUp	1s both 0.6s;
+}
+.sufia-slider-circle .single-slider.slick-active .btn {
+    animation: fadeInUp 1s both 1s;
+}
+.sufia-slider-circle .single-slider.slick-active .b-arrow{
+    animation: fadeInUp 1s both 1.5s;
+}
+/*===============================
+	End Slider Style
+===============================*/
 
 
 
