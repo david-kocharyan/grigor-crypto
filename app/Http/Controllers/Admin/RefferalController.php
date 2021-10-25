@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class RefferalController extends Controller
 {
+
+    const FOLDER = "admin.referrals";
+    const TITLE = "Referrals";
+    const ROUTE = "/admin/referrals";
+    const LIMIT = 15;
+
     /**
      * Display a listing of the resource.
      *

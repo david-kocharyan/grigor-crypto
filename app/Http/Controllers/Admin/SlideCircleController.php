@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class SlideCircleController extends Controller
 {
+
+    const FOLDER = "admin.circle";
+    const TITLE = "Slider Circle";
+    const ROUTE = "/admin/slider-circle";
+    const LIMIT = 15;
+
     /**
      * Display a listing of the resource.
      *

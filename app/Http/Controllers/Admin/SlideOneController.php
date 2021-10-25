@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class SlideOneController extends Controller
 {
+
+    const FOLDER = "admin.one";
+    const TITLE = "Slider One";
+    const ROUTE = "/admin/slider-one";
+    const LIMIT = 15;
+
     /**
      * Display a listing of the resource.
      *
