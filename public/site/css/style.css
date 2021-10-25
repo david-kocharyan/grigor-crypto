@@ -1545,9 +1545,8 @@ thead {
 .sufia-slider-circle .single-slider {
     height: 150px;
     background-image: url(img/hero-bg.jpg);
-    background-size: cover;
+    background-size: contain;
     position: relative;
-    border-radius: 50%;
     margin: 10px;
 }
 .sufia-slider-circle .single-slider:before{
@@ -1643,6 +1642,8 @@ thead {
     margin-top:-40px;
     z-index:5;
     color:#fff;
+    border: none;
+    background: none;
     background:rgba(255, 255, 255, 0.30);
     transition:all 0.4s ease;
     -webkit-transition:all 0.4s ease;
